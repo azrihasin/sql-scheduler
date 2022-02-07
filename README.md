@@ -3,4 +3,16 @@ scheduler using sql database
 
 ## Dashboard
 
-<img src="login.JPG" width="300" >
+<img src="dashboard.JPG" width="500" >
+
+## Login
+
+<img src="login.JPG" width="500" >
+
+## Add/Edit subject
+
+<img src="addedit.JPG" width="500" >
+
+## After Add Subject
+
+<img src="afteradd.JPG" width="500" >
