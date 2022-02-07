@@ -1,5 +1,5 @@
 # sql-scheduler
-scheduler using sql database
+scheduler using sql database, flask (backend), html, css, js(frontend)
 
 ## Dashboard
 
