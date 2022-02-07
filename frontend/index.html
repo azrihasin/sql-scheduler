@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="external/bootstrap.min.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Timetable</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand">Time table</a>
+        <div class="user-btn">
+            <div>
+                <button class="btn btn-outline-light" id="profile-btn">Profile</button>
+                <button class="btn btn-outline-light" id="logout-btn">Log Out</button>
+            </div>
+            <button class="btn btn-primay" id="login-btn" style="background-color: yellow ;">Login</button>
+        </div>
+        
+    </nav>
+    <div class="container">
+        <div class="top-btn">
+            <!-- <input type="file"  id="pdfcrs">
+            <button id="uploadpdf-btn">Upload</button> -->
+            <button type="button" class="btn btn-outline-primary" id="add-subject-btn">Add new subject</button>
+        </div>
+
+    </div>
+    <div class="table">
+ 
+    </div>
+    <div class="table-form">
+        <h3>Add/Edit table</h3>
+        <div class="input-container">
+            <h5 for="subjectname">Subject name</h5>
+            <input type="text" name="subjectname" id="subject-name">
+        </div>
+        <div class="input-container">
+            <h5 for="starttime">Start time</h5>
+            <input type="time" name="starttime" id="start-time">
+            <br>
+            <h5 for="endtime">End time</h5>
+            <input type="time" name="endtime" id="end-time">
+        </div>
+        <div class="input-container">
+            <h5>Color</h5>
+            <input type="color" id="color-picker">
+        </div>
+        <div class="input-container" id="day-input">
+            <h5 class="day-label">Day</h5><br>
+            <input class="day-input" type="checkbox" id="mon-check" value="1">Monday
+            <input class="day-input" type="checkbox" id="tue-check" value="2">Tuesday
+            <input class="day-input" type="checkbox" id="wed-check" value="3">Wednesday
+            <input class="day-input" type="checkbox" id="thur-check" value="4">Thursday
+            <input class="day-input" type="checkbox" id="fri-check" value="5">Friday
+            <input class="day-input" type="checkbox" id="sat-check" value="6">Saturday
+            <input class="day-input" type="checkbox" id="sun-check" value="7">Sunday
+        </div>
+        <div class="form-btn">
+            <button class="btn btn-primary" id="confirm-subject-btn">Confirm</button>
+            <button class="btn btn-danger" id="cancel-subject-btn">Cancel</button>
+        </div>
+    </div>
+    <div class="register-form">
+        <h3>Register</h3>
+        <div>
+            <label>Username</label>
+            <input type="text" class="input-text"  id="username-register">
+        </div>
+        <div>
+            <label>E-mail</label>
+            <input type="text" class="input-text"  id="email-register">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="text" class="input-text"  id="password-register">
+        </div>
+        <div>
+            <label>Kulliyyah</label>
+            <input type="text" class="input-text"  id="kulliyyah-register">
+        </div>
+        <div>
+            <label>Matric No</label>
+            <input type="text" class="input-text"  id="matricno-register">
+        </div>
+        <small id="register-message"></small><br>
+        <div class="form-btn">
+            <button class="btn btn-primary" id="confirm-register-btn">Confirm</button>
+            <button class="btn btn-danger" id="cancel-register-btn">Cancel</button>
+        </div>
+    </div>
+    <div class="login-form">
+        <h3>Log in</h3>
+        <div>
+            <label>E-mail</label>
+            <input type="text" class="input-text" id="email-login">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" class="input-text" id="password-login">
+        </div>
+        <small id="login-message"></small><br><br>
+        <div class="register-btn">
+            <button class="btn btn-info">Register</button>
+        </div>
+        <div class="form-btn">
+            <button class="btn btn-primary" id="confirm-login-btn">Confirm</button>
+            <button class="btn btn-danger" id="cancel-login-btn">Cancel</button>
+        </div>
+    </div>
+    <div class="profile-view">
+        <h3>Profile</h3>
+        <div class="view-profile">
+            <div>
+                <label>Username</label>
+                <p id="username-view">Ahmad</p>
+            </div>
+            <div>
+                <label>Email</label>
+                <p id="email-view">email@gmail.com</p>
+            </div>
+            <div>
+                <label>Kulliyyah</label>
+                <p id="kulliyyah-view">KICT</p>
+            </div>
+            <div>
+                <label>Matric No</label>
+                <p id="matricno-view">1212234</p>
+            </div>
+            <div class="form-btn">
+                <button class="btn btn-danger" id="delete-account-btn">Delete account</button>
+                <button class="btn btn-secondary" id="close-profile-btn">Close</button>
+                <button class="btn btn-primary" id="edit-profile-btn">Edit</button>
+            </div>
+        </div>
+        <div class="edit-profile">
+            <div>
+                <label>Username</label>
+                <input type="text" class="input-text" id="username-edit">
+            </div>
+            <div>
+                <label>E-mail</label>
+                <input type="text" class="input-text"  id="email-edit">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="text" class="input-text"  id="password-edit">
+            </div>
+            <div>
+                <label>Kulliyyah</label>
+                <input type="text" class="input-text"  id="kulliyyah-edit">
+            </div>
+            <div>
+                <label>Matric No</label>
+                <input type="text" class="input-text"  id="matricno-edit">
+            </div>
+            <div class="form-btn">
+                <button class="btn btn-secondary" id="confirm-edit-profile-btn">Confirm</button>
+                <button class="btn btn-primary" id="cancel-edit-profile-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="menu">
+        <svg style="position: absolute; top: 30px;" 
+            height="30" width="30" fill="white">
+            <path d="M0 0 L30 0 L15 30 Z" />
+        </svg>
+        <p id="edit-subject">Edit</p>
+        <p>|</p>
+        <p id="remove-subject">Remove</p>
+        <p>|</p>
+        <p id="cancel-subject">x</p>
+    </div>
+    <script src="js/fetch.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/table.js"></script>
+</body>
+
+</html>

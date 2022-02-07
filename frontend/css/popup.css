@@ -1,0 +1,86 @@
+.table-form {
+    height: 70vh;
+    width: 70vw;
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    top: 85px;
+    background-color: white;
+    z-index: 5;
+    display: none;
+}
+
+.register-form{
+    height: 65vh;
+    width: 55vw;
+    max-width: 500px;
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    top: 100px;
+    background-color: white;
+    display: none;
+    z-index: 5;
+}
+
+.login-form{
+    height: 50vh;
+    width: 55vw;
+    max-width: 500px;
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    top: 100px;
+    background-color: white;
+    display: none;
+    z-index: 5;
+}
+
+.profile-view{
+    height: 65vh;
+    width: 55vw;
+    max-width: 500px;
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    top: 85px;
+    background-color: white;
+    display: none;
+    z-index: 5;
+}
+
+.view-profile{
+    display: none;
+}
+
+.view-profile label{
+    font-size: large;
+}
+
+.view-profile p{
+    display: inline;
+}
+
+.edit-profile{
+    display: none;
+}
